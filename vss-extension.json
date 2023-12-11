@@ -1,0 +1,41 @@
+{
+  "manifestVersion": 1,
+  "id": "azure-pipelines-fcli-tasks",
+  "name": "Fortify CLI (fcli) Tasks",
+  "version": "0.1.0",
+  "publisher": "fortify-presales",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "This extension includes various Azure Pipelines Tasks for integrating with the Fortify CLI (fcli) tool.\n",
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "content": {
+    "details": {
+      "path": "marketplace.md"
+    }
+  },
+  "icons": {
+    "default": "images/extension-icon.png"
+  },
+  "files": [
+    {
+      "path": "Tasks/FcliInstallerV0"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "FcliInstallerV0",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "Tasks/FcliInstallerV0"
+      }
+    }
+  ]
+}

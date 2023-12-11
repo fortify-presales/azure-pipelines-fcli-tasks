@@ -1,0 +1,51 @@
+{
+  "id": "97910631-1e78-4736-81e6-36dde73250f1",
+  "name": "FcliInstaller",
+  "friendlyName": "Install Fortify CLI (fcli)",
+  "description": "Install a specified version of the Fortify CLI (fcli) utility",
+  "helpMarkDown": "[Learn more about this task](https://github.com/fortify-presales/azure-pipelines-tasks)",
+  "category": "Tool",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "author": "Fortify Pre-Sales",
+  "version": {
+    "Major": 0,
+    "Minor": 1,
+    "Patch": 0
+  },
+  "preview": true,
+  "demands": [],
+  "groups": [],
+  "inputs": [
+    {
+      "name": "version",
+      "label": "Version",
+      "type": "string",
+      "helpMarkDown": "Specify the version of fcli to install. Ex:<br><br>v2.1.0<br>latest",
+      "defaultValue": "latest"
+    }
+  ],
+  "instanceNameFormat": "Install fcli $(version)",
+  "execution": {
+    "Node10": {
+      "target": "src/fcliInstaller.js"
+    },
+    "Node16": {
+      "target": "src/fcliInstaller.js",
+      "argumentFormat": ""
+    }
+  },
+  "messages": {
+    "ErrorFetchingLatestVersion": "An error occurred while fetching the latest version info from %s. Error: %s. Downloading default stable version: %s.",
+    "FindingLatestFcliVersion": "Finding latest fcli version...",
+    "FcliDownloadFailed": "Failed to download fcli from location %s. Error %s.",
+    "LatestFcliVersion": "Latest version is %s",
+    "NotAValidVersion": "Version not specified in correct format. Ex: v2.1.0, latest",
+    "NotAValidSemverVersion": "Version not specified in correct format. Ex: v2.1.0, latest",
+    "SuccessfullyDownloaded": "Successfully downloaded fcli %s. Download path: %s.",
+    "VerifyingFcliInstallation": "Verifying fcli installation...",
+    "VersionAlreadyInstalled": "fcli version %s is already installed. Installation path: %s."
+  }
+}

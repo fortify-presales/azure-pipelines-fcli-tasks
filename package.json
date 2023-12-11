@@ -1,0 +1,22 @@
+{
+  "name": "azure-pipelines-tasks",
+  "description": "This extension includes various fcli Azure Pipelines tasks. fcli is a command-line utility for interacting with various Fortify products.",
+  "version": "0.1.3",
+  "scripts": {
+    "install": "node all.js install",
+    "build": "node all.js run build",
+    "package": "tfx extension create --manifest-globs vss-extension.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fortify-presales/azure-pipelines-tasks.git"
+  },
+  "keywords": [],
+  "author": "kadraman",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/fortify-presales/azure-pipelines-tasks/issues"
+  },
+  "homepage": "https://github.com/fortify-presales/azure-pipelines-tasks"
+}
