@@ -3,7 +3,7 @@
   "name": "FcliInstaller",
   "friendlyName": "Install Fortify CLI (fcli)",
   "description": "Install a specified version of the Fortify CLI (fcli) utility",
-  "helpMarkDown": "[Learn more about this task](https://github.com/fortify-presales/azure-pipelines-tasks)",
+  "helpMarkDown": "[Learn more about this task](https://github.com/fortify-presales/azure-pipelines-fcli-tasks)",
   "category": "Tool",
   "visibility": [
     "Build",
