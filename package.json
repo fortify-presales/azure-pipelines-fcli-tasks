@@ -1,5 +1,5 @@
 {
-  "name": "azure-pipelines-tasks",
+  "name": "azure-pipelines-fcli-tasks",
   "description": "This extension includes various fcli Azure Pipelines tasks. fcli is a command-line utility for interacting with various Fortify products.",
   "version": "0.1.0",
   "scripts": {
